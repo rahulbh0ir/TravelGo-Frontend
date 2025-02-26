@@ -1,0 +1,20 @@
+* {
+  margin: 0;
+}
+
+.navbar{
+  background-color: #D8D3C5; 
+  display: flex; 
+  align-items: center;
+  width: 100%;
+}
+
+.navbar ul {
+  display: flex;  
+}
+
+.loginbtn{
+    width: 80px;
+    height: 30px;
+    
+}
