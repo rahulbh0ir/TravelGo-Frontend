@@ -4,6 +4,7 @@ import About from "./pages/About"
 import Contact from "./pages/Contact"
 import Tours from "./pages/Tours"
 import Layout from './assets/Layout';
+import NotFound from "./pages/NotFound"
 
 function App() {
   const router = createBrowserRouter(
@@ -13,6 +14,7 @@ function App() {
         <Route path="about" element={<About />} />
         <Route path="tours" element={<Tours />} />
         <Route path="contact" element={<Contact />} />
+        <Route path="*" element={<NotFound />} />
       </Route>
     )
   )
