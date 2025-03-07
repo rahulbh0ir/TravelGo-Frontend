@@ -9,3 +9,7 @@ const Tours = () => {
 }
 
 export default Tours 
+
+export const tourLoader = async () => {
+
+}

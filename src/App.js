@@ -5,6 +5,7 @@ import Contact from "./pages/Contact"
 import Tours from "./pages/Tours"
 import Layout from './assets/Layout';
 import NotFound from "./pages/NotFound"
+import TourLayout from "./assets/TourLayout"
 
 function App() {
   const router = createBrowserRouter(
@@ -12,7 +13,9 @@ function App() {
       <Route path="/" element={ <Layout /> }>
         <Route index element={<Home />} />
         <Route path="about" element={<About />} />
-        <Route path="tours" element={<Tours />} />
+        <Route path="tours" element={<TourLayout />}>
+          <Route index  element={<Tours />} />
+        </Route> 
         <Route path="contact" element={<Contact />} />
         <Route path="*" element={<NotFound />} />
       </Route>

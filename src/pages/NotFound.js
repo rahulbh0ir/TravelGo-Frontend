@@ -12,15 +12,16 @@ const NotFound = () => {
     <button 
       onClick={() => navigate("/")} 
       style={{
-        marginLeft: "35%",
+        marginLeft: "27%",
         border: "none",
         backgroundColor: "black",
         color: "white",
-        width: "80px",
+        width: "150px",
         height: "50px",
-        borderRadius: "10px"
+        borderRadius: "10px",
+        cursor: "pointer",
       }}   
-    >Home</button>
+    >Go To Home</button>
     </div>
     </>
   )
